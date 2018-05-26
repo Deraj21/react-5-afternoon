@@ -1,12 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import router from './router'
-
-/*
-
-Open src/App.js.
-Remove the invoking parenthesis from your {router} as well as the content inside of them.
-*/
+import { connect } from 'react-redux';
 
 class App extends Component {
   constructor(){
@@ -39,9 +34,7 @@ class App extends Component {
       lastName: '',
       email: ''
     }
-    //first view 
-    this.handleChangeLoanType = this.handleChangeLoanType.bind(this);
-    this.handleChangePropertyType = this.handleChangePropertyType.bind(this);
+    //first view
     //second view
     this.handleChangeCity = this.handleChangeCity.bind(this);
     //third view
@@ -72,12 +65,6 @@ class App extends Component {
     this.handleChangeEmail = this.handleChangeEmail.bind(this);
   }
     //first view
-    handleChangeLoanType(event) {
-        this.setState({loanType : event.target.value});
-    }
-    handleChangePropertyType(event) {
-        this.setState({propertyType : event.target.value});
-    }
     //second view
     handleChangeCity(event){
         this.setState({city : event.target.value});
@@ -154,4 +141,6 @@ class App extends Component {
   }
 }
 
-export default App;
+function mapStateToProps(state) { return state; }
+
+export default connect( mapStateToProps )( App );

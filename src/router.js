@@ -1,4 +1,5 @@
 import React from 'react';
+
 import WizardOne from './components/WizardOne/WizardOne';
 import WizardTwo from './components/WizardTwo/WizardTwo';
 import WizardThree from './components/WizardThree/WizardThree';
@@ -15,30 +16,22 @@ import Finish from './components/Finish/Finish';
 import NextBtn from './components/NextBtn/NextBtn';
 import { Switch, Route } from 'react-router-dom';
 
-
-/*
-
-*/
-
 export default (
-            <Switch>
-                <Route component={NextBtn} exact path= '/'/>
+  <Switch>
 
-                <Route component={WizardOne} path='/wOne' />
-                <Route component={WizardTwo} path="/wTwo" />
-                <Route component={WizardThree} path="/wThree" />
-                <Route component={WizardFour} path='/wFour' />
-                <Route component={WizardFive} path='/wFive' />
-                <Route component={WizardSix} path='/wSix' />
-                <Route component={WizardSeven} path="/wSeven" />
-                <Route component={WizardEight} path="/wEight" />
-                <Route component={WizardNine} path="/wNine" />
-                <Route component={WizardTen} path="/wTen" />
-                <Route component={WizardEleven} path="/wEleven" />
+        <Route component={NextBtn} exact path= '/'/>
+        <Route component={WizardOne}  path='/wOne'/>
+        <Route component={WizardTwo}  path="/wTwo"/>
+        <Route component={WizardThree} path="/wThree"/>
+        <Route component={WizardFour} path="/wFour"/>
+        <Route component={WizardFive} path="/wFive"/>
+        <Route component={WizardSix} path="/wSix"/>
+        <Route component={WizardSeven} path="/wSeven"/>
+        <Route component={WizardEight} path="/wEight"/>
+        <Route component={WizardNine} path="/wNine"/>
+        <Route component={WizardTen} path="/wTen"/>
+        <Route component={WizardEleven} path="/wEleven"/>
+        <Route component={Finish} path='/finish'/>
 
-                <Route component={Finish} path='/finish' />
-            </Switch>
-        );
- 
-
- 
+      </Switch>
+)

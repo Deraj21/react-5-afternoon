@@ -702,7 +702,7 @@ Now that our `src/App.js` is connected to our `redux` store, let's begin connect
       ```
       
       </details>
-    * You may be scratching your head as to why we are using these exact propeties. When we setup the reducer later on, these will be the names of the properties the `redux` store will be managing. 
+    * You may be scratching your head as to why we are using these exact properties. When we setup the reducer later on, these will be the names of the properties the `redux` store will be managing. 
 
 <details>
 
