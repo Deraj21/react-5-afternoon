@@ -27,4 +27,4 @@ function mapStateToProps(state){
     };
 }
 
-export default connect(mapStateToProps, { updateFound })(WizardFour);
+export default connect(mapStateToProps, { updateFound })( WizardFour );
